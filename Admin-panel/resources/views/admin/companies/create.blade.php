@@ -11,7 +11,7 @@
 <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Add Company</h1>
 <form method="POST" action="{{url('admin/companies')}}" enctype="multipart/form-data">
     @csrf
-    <label>First Name</label>
+    <label>Name</label>
     <input class="form-control" name="name" value="{{ old('name') }}"/>
     @error('name')
         <div class="alert alert-danger">{{ $message }}</div>

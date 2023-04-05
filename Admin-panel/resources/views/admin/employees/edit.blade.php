@@ -19,7 +19,7 @@
         <div class="alert alert-danger">{{ $message }}</div>
     @enderror
     <br>
-    <label>First Name</label>
+    <label>Last Name</label>
     <input class="form-control" name="last_name" value="{{ old('name',$employee['Last Name']) }}" />
     @error('last_name')
         <div class="alert alert-danger">{{ $message }}</div>
